@@ -1,8 +1,4 @@
 import re
-import pandas as pd
-
-columns = ['number', 'row', 'indices']
-df = pd.DataFrame(columns=columns)
 
 txt_file_path = 'data.txt'
 data = []
