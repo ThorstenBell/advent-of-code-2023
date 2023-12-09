@@ -41,7 +41,6 @@ def check_for_symbols(elem):
         search_indices.append(min(elem['indices']) - 1)
     if max(elem['indices']) < string_length:
         search_indices.append(max(elem['indices']) + 1)
-    df.loc[len(df.index)] = [elem['number'], search_rows, search_indices]
     for search_row in search_rows:
         for search_index in search_indices:
             if not is_symbol(data[search_row][search_index]):
